@@ -1,0 +1,7 @@
+dataset/*
+outputs/*
+submissions/*
+**/.ipynb_checkpoints
+**/dist
+**/*.egg-info
+**/__pycache__
