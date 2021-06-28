@@ -3,7 +3,7 @@
 Store the model training outputs in this directory.
 The following folder structure can be used to store them
 
-"""
+```
 outputs
 |
 |------ <some meaningful prefix>-<timestamp>
@@ -18,7 +18,7 @@ outputs
 ...............
 .............................
 .......
-"""
+```
 
 - The meaningful prefix can be used to identify what model architecture and training hyperparamters were used in the model
 - The timestamp is used to know the time of creation and to prevent two folders having same name
