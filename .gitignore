@@ -5,3 +5,5 @@ submissions/*
 **/dist
 **/*.egg-info
 **/__pycache__
+!**/.gitignore
+!**/README.md
