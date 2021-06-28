@@ -44,7 +44,7 @@ def predictJson(instances, version=None):
 def makeOnlinePredictions():
     batch_size = BATCH_SIZE
     x = prepare_test_data('./dataset/test.csv')
-    xlist = convert_to_list(x)
+    xlist = convert_to_list(x, 50)
     numRecords = len(xlist)
     predictions = {}
     i = 0
@@ -61,6 +61,7 @@ def makeOnlinePredictions():
         except RuntimeError as error:
             print('The following error occured while processing batch ${0} - ${1}'.format(i, i + BATCH_SIZE))
             print(error)
+        i += BATCH_SIZE
     print(predictions)
 
 if __name__ == '__main__':
